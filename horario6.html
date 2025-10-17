@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Emergentes 02/2025</title>
+    <link rel="stylesheet" href="tarea6.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#sec1">Nombres y Apellidos</a></li>
+            <li><a href="#sec2">Horarios</a></li>
+            <li><a href="#sec3">Formularios</a></li>
+            <li><a href="#sec4">Datos Extra</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1><tt>TECNOLOGÍAS EMERGENTES 02/2025</tt></h1>
+
+        <!-- Sección 1 -->
+        <section id="sec1">
+            <h2>Datos personales</h2>
+            <p><strong>NOMBRES:</strong> <ins>Wilson Ariel</ins></p>
+            <p><strong>APELLIDOS:</strong> <del>Flores Flores</del></p>
+            <p><strong>SEMESTRE:</strong> <ins>4° Semestre</ins></p>
+            <p><strong>Fecha de Nacimiento:</strong> <ins>02/10/2005</ins></p>
+            <p><strong>Universidad:</strong> Universidad Autónoma Tomás Frías</p>
+            <p><strong>Carrera:</strong> Ingeniería de Sistemas</p>
+        </section>
+
+        <!-- Sección 2 -->
+        <section id="sec2">
+            <h2>Horarios</h2>
+            <table>
+                <tr>
+                    <th>Horario</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr><td>07:45-08:30</td><td></td><td></td><td></td><td bgcolor="red">SIS415</td><td></td></tr>
+                <tr><td>08:30-09:15</td><td></td><td></td><td></td><td bgcolor="red">SIS415</td><td></td></tr>
+                <tr><td>09:15-10:00</td><td></td><td></td><td></td><td bgcolor="red">SIS415</td><td></td></tr>
+                <tr><td>10:00-10:45</td><td></td><td bgcolor="silver">SIS443</td><td bgcolor="aqua">SIS421</td><td bgcolor="blue">SIS414</td><td></td></tr>
+                <tr><td>10:45-11:30</td><td></td><td bgcolor="silver">SIS443</td><td bgcolor="aqua">SIS421</td><td bgcolor="blue">SIS414</td><td></td></tr>
+                <tr><td>11:30-12:15</td><td></td><td bgcolor="silver">SIS443</td><td bgcolor="aqua">SIS421</td><td></td><td></td></tr>
+                <tr><td>14:00-14:45</td><td></td><td></td><td bgcolor="green">SIS416</td><td></td><td></td></tr>
+                <tr><td>14:45-15:30</td><td></td><td></td><td bgcolor="green">SIS416</td><td></td><td></td></tr>
+                <tr><td>15:30-16:15</td><td></td><td></td><td bgcolor="green">SIS416</td><td></td><td></td></tr>
+                <tr><td>16:15-17:00</td><td bgcolor="red">SIS415</td><td bgcolor="blue">SIS414</td><td bgcolor="blue">SIS414</td><td bgcolor="silver">SIS443</td><td></td></tr>
+                <tr><td>17:00-17:45</td><td bgcolor="red">SIS415</td><td bgcolor="blue">SIS414</td><td bgcolor="blue">SIS414</td><td bgcolor="silver">SIS443</td><td></td></tr>
+                <tr><td>17:45-18:30</td><td bgcolor="red">SIS415</td><td bgcolor="blue">SIS414</td><td bgcolor="blue">SIS414</td><td bgcolor="silver">SIS443</td><td></td></tr>
+                <tr><td>18:30-19:15</td><td bgcolor="yellow">SIS420</td><td bgcolor="green">SIS416</td><td bgcolor="yellow">SIS420</td><td bgcolor="aqua">SIS421</td><td></td></tr>
+                <tr><td>19:15-20:00</td><td bgcolor="yellow">SIS420</td><td bgcolor="green">SIS416</td><td bgcolor="yellow">SIS420</td><td bgcolor="aqua">SIS421</td><td></td></tr>
+                <tr><td>20:00-20:45</td><td bgcolor="yellow">SIS420</td><td bgcolor="green">SIS416</td><td bgcolor="yellow">SIS420</td><td bgcolor="aqua">SIS421</td><td></td></tr>
+            </table>
+        </section>
+
+        <!-- Sección 3 -->
+        <section id="sec3">
+            <h2>Formulario</h2>
+            <form action="procesar.php" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <label>Nombre:
+                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    </label>
+
+                    <label>Apellidos:
+                        <input type="text" name="apellido" placeholder="Tus apellidos" required>
+                    </label>
+
+                    <label>Ciudad:</label>
+                    <input list="ciudades" id="ciudad" name="ciudad" placeholder="Escribe o selecciona">
+                    <datalist id="ciudades">
+                        <option value="La Paz"></option>
+                        <option value="Cochabamba"></option>
+                        <option value="Chuquisaca"></option>
+                        <option value="Santa Cruz"></option>
+                        <option value="Potosí"></option>
+                        <option value="Tarija"></option>
+                        <option value="Oruro"></option>
+                        <option value="Pando"></option>
+                        <option value="Beni"></option>
+                    </datalist>
+
+                    <label>Fecha:
+                        <input type="date">
+                    </label>
+
+                    <label>Hora:
+                        <input type="time">
+                    </label>
+
+                    <label>Email:
+                        <input type="email" name="email" placeholder="usuario@gmail.com" required>
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Sección 4 -->
+        <section id="sec4">
+            <h2>Otros datos</h2>
+            <p>Ingeniería de Sistemas - Sede Tupiza</p>
+        </section>
+    </main>
+
+    <footer>
+        TODOS LOS DERECHOS RESERVADOS © 2025 <br>
+        Tecnologías Emergentes
+    </footer>
+</body>
+</html>
